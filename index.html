@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Demo</title>
+    </head>
+    <body>
+        <div class="main">
+            <h1>Tư vấn du học</h1>
+            <form>
+                <div class="hocvan">
+                    <label for="">Tình trạng học vấn:</label>
+                    <div>
+                        <input
+                            type="radio"
+                            name="hocvan"
+                            id="khdh"
+                            value="khdh"
+                        />
+                        <label for="khdh">Không học Đại học</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            name="hocvan"
+                            id="dhdh"
+                            value="dhdh"
+                        />
+                        <label for="dhdh">Đang học Đại học</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            name="hocvan"
+                            id="dtn"
+                            value="dtn"
+                        />
+                        <label for="dtn">Đã tốt nghiệp</label>
+                    </div>
+                </div>
+
+                <div class="hoancanh">
+                    <label for="">Hoàn cảnh gia đình:</label>
+                    <div>
+                        <input
+                            type="radio"
+                            name="hoancanh"
+                            id="kk"
+                            value="kk"
+                        />
+                        <label for="kk">Khó khăn</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            name="hoancanh"
+                            id="bt"
+                            value="bt"
+                        />
+                        <label for="bt">Bình thường</label>
+                    </div>
+                    <div>
+                        <input
+                            type="radio"
+                            name="hoancanh"
+                            id="dg"
+                            value="dg"
+                        />
+                        <label for="dg">Dư giả</label>
+                    </div>
+                </div>
+
+                <div class="hocluc">
+                    <label for="">Học lực:</label>
+                    <div>
+                        <input type="radio" name="hocluc" id="tb" value="tb" />
+                        <label for="tb">Trung bình</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="hocluc" id="k" value="k" />
+                        <label for="k">Khá</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="hocluc" id="g" value="g" />
+                        <label for="g">Giỏi</label>
+                    </div>
+                </div>
+
+                <div class="suckhoe">
+                    <label for="">Sức khỏe:</label>
+                    <div>
+                        <input
+                            type="radio"
+                            name="suckhoe"
+                            id="khong"
+                            value="khong"
+                        />
+                        <label for="khong">Không</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="suckhoe" id="co" value="co" />
+                        <label for="co">Có</label>
+                    </div>
+                </div>
+
+                <button id="btn" type="button">Xác nhận</button>
+            </form>
+        </div>
+
+        <div class="modal modal-close">
+            <div class="modal-container">
+                <h2 class="modal-header">Kết quả</h2>
+                <p class="modal-des">Bạn nên đi du học</p>
+                <button id="btn-close">Đóng</button>
+            </div>
+        </div>
+        <script src="./script.js"></script>
+    </body>
+</html>
